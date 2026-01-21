@@ -1186,7 +1186,7 @@ section {
     font-size: clamp(1.1rem, 2.5vw, 1.5rem);
     line-height: 1.6;
     color: var(--text-primary);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-sm);
     position: relative;
 }
 
