@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:milkweed.org)",
+      "Bash(for img in images/*.jpg)",
+      "Bash(do echo '=== $\\(basename $img\\) ===')",
+      "Bash(sips:*)",
+      "Bash(done)"
+    ]
+  }
+}

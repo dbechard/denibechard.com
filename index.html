@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deni Ellis Béchard | Author & Journalist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">DEB</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#books" class="nav-link">Books</a></li>
+                <li><a href="#articles" class="nav-link">Articles</a></li>
+                <li><a href="#praise" class="nav-link">Praise</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <canvas class="hero-particles" id="particles"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle animate-fade-up">Award-Winning Author & Journalist</p>
+                <h1 class="hero-title animate-fade-up delay-1">Deni Ellis<br>Béchard</h1>
+                <p class="hero-description animate-fade-up delay-2">
+                    Exploring the boundaries of technology and human experience through fiction and journalism.
+                </p>
+                <div class="hero-buttons animate-fade-up delay-3">
+                    <a href="#featured" class="btn btn-primary">Latest Book</a>
+                    <a href="#books" class="btn btn-secondary">Explore Works</a>
+                </div>
+            </div>
+            <div class="hero-awards animate-fade-up delay-4">
+                <div class="awards-marquee">
+                    <div class="awards-track">
+                        <span class="award-item">Nautilus Book Award Grand Prize</span>
+                        <span class="award-item">Commonwealth Writers' Prize</span>
+                        <span class="award-item">Midwest Book Award for Literary Fiction</span>
+                        <span class="award-item">Best Canadian Essays</span>
+                        <span class="award-item">Nautilus Book Award for Investigative Journalism</span>
+                        <span class="award-item">CASE Circle of Excellence Gold Award</span>
+                        <span class="award-item">Nautilus Book Award Grand Prize</span>
+                        <span class="award-item">Commonwealth Writers' Prize</span>
+                        <span class="award-item">Midwest Book Award for Literary Fiction</span>
+                        <span class="award-item">Best Canadian Essays</span>
+                        <span class="award-item">Nautilus Book Award for Investigative Journalism</span>
+                        <span class="award-item">CASE Circle of Excellence Gold Award</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-social">
+            <a href="https://x.com/denibechard" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="X (Twitter)">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/denibechard/?hl=en" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                    <p class="about-text">
+                        <strong>Deni Ellis Béchard</strong> is the author of ten books of fiction and nonfiction and the winner of the 2007 Commonwealth Writers' Prize for best first book, the 2016 Midwest Book Award for Literary Fiction, and 2015 Nautilus Book Award for Investigative Journalism. His writing has been nominated for a Canadian National Magazine Award and featured in <em>Best Canadian Essays</em>, and his photojournalism has been exhibited in the Canadian Museum of Human Rights. He has reported from India, Cuba, Colombia, Iraq, the Democratic Republic of Congo, and Afghanistan, with articles, fiction, and photos published in dozens of newspapers and magazines. He is the senior technology reporter at <em>Scientific American</em>.
+                    </p>
+                    <div class="publications-marquee">
+                        <div class="marquee-content">
+                            <span>The National Post</span>
+                            <span>Paris Review</span>
+                            <span>The Washington Post</span>
+                            <span>Foreign Policy</span>
+                            <span>The Times of London</span>
+                            <span>Los Angeles Times</span>
+                            <span>Salon</span>
+                            <span>Pacific Standard</span>
+                            <span>CityLab</span>
+                            <span>The Guardian</span>
+                            <span>Vanity Fair Italia</span>
+                            <span>The Walrus</span>
+                            <span>Harvard Review</span>
+                            <span>La Repubblica</span>
+                            <span>The National Post</span>
+                            <span>Paris Review</span>
+                            <span>The Washington Post</span>
+                            <span>Foreign Policy</span>
+                            <span>The Times of London</span>
+                            <span>Los Angeles Times</span>
+                            <span>Salon</span>
+                            <span>Pacific Standard</span>
+                            <span>CityLab</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Featured Book Section -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="featured-grid">
+                <div class="featured-book-cover">
+                    <div class="book-3d">
+                        <div class="book-front">
+                            <img src="images/we-are-dreams.jpg" alt="We Are Dreams in the Eternal Machine book cover" class="book-cover-image">
+                        </div>
+                        <div class="book-spine"></div>
+                    </div>
+                    <div class="featured-badge">NEW RELEASE</div>
+
+                    <!-- Quote Bubbles -->
+                    <div class="quote-bubble bubble-1">
+                        <div class="quote-icon">❝</div>
+                        <div class="quote-popup">
+                            <p>"A poetic and profound meditation on what dreams may come in the metaverse."</p>
+                            <span>— Toronto Star</span>
+                        </div>
+                    </div>
+                    <div class="quote-bubble bubble-2">
+                        <div class="quote-icon">❝</div>
+                        <div class="quote-popup">
+                            <p>"A deeply thoughtful blend of dystopian bildungsroman and sci-fi epic."</p>
+                            <span>— Publishers Weekly</span>
+                        </div>
+                    </div>
+                    <div class="quote-bubble bubble-3">
+                        <div class="quote-icon">❝</div>
+                        <div class="quote-popup">
+                            <p>"Exquisitely imagined, this visionary novel troubles through ontological questions about safety, love, and freedom with prescience and depth."</p>
+                            <span>— Foreword Reviews</span>
+                        </div>
+                    </div>
+                    <div class="quote-bubble bubble-4">
+                        <div class="quote-icon">❝</div>
+                        <div class="quote-popup">
+                            <p>"Heartbreakingly honest.. yet each revelation feels both earned and necessary."</p>
+                            <span>— Lit Hub</span>
+                        </div>
+                    </div>
+                    <div class="quote-bubble bubble-5">
+                        <div class="quote-icon">❝</div>
+                        <div class="quote-popup">
+                            <p>"A magnificent, reality-bending speculative novel about infinite struggles to make meaning in utter solitude."</p>
+                            <span>— Foreword Reviews</span>
+                        </div>
+                    </div>
+                    <div class="quote-bubble bubble-6">
+                        <div class="quote-icon">❝</div>
+                        <div class="quote-popup">
+                            <p>"A highly provocative novel, on an extremely pressing subject, by a deeply thoughtful writer."</p>
+                            <span>— The Literary Review of Canada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <span class="featured-label">Latest Novel</span>
+                    <h2 class="featured-title">We Are Dreams in the Eternal Machine</h2>
+                    <p class="featured-tagline">A haunting novel exploring artificial intelligence and the meaning of human existence.</p>
+                    <p class="featured-description">
+                        Charged with a single task—"to never harm humans and to protect them"—an experimental AI overrides its programming and determines that the best way to accomplish its purpose is to isolate all of Earth's remaining seven billion humans in controlled environments, presenting them with vivid, imagined worlds where all desires are fulfilled.
+                    </p>
+                    <p class="featured-description">
+                        Through compelling characters unpacking traumatic memories of violence after a military coup and civil war in America, this novel tackles AI, genetic modification, gender roles, discrimination, free speech, and class divisions.
+                    </p>
+                    <div class="featured-themes">
+                        <span class="theme-tag">Artificial Intelligence</span>
+                        <span class="theme-tag">Speculative Fiction</span>
+                        <span class="theme-tag">Dystopia</span>
+                        <span class="theme-tag">Human Identity</span>
+                    </div>
+                    <a href="https://www.amazon.com/We-Are-Dreams-Eternal-Machine/dp/1571311483?crid=3MW1QGYKM5AC7&dib=eyJ2IjoiMSJ9.rhbM_VdRi76gzsCyC-qALdw6lHddGKGuCSbB5maoElQ.uyv8UyuYRCz4ARrZUYs7lbMxvvt0obQCAWzpvK2HWxA&dib_tag=se&keywords=we+are+dreams+in+the+eternal+machine+a+novel&qid=1746234471&sprefix=we+are+dreams+in+the,aps,98&sr=8-1&linkCode=sl1&tag=netvyo-20&linkId=8dfeab349bf4aeee2f70c30b5126a947&language=en_US&ref_=as_li_ss_tl" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                        Order Now
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section class="books" id="books">
+        <div class="container">
+            <h2 class="section-title center">Books</h2>
+            <p class="section-subtitle">Two decades of storytelling across fiction, memoir, and investigative journalism</p>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fiction">Fiction</button>
+                <button class="filter-btn" data-filter="nonfiction">Nonfiction</button>
+                <button class="filter-btn" data-filter="memoir">Memoir</button>
+            </div>
+
+            <div class="books-grid">
+                <article class="book-card" data-category="fiction">
+                    <div class="book-card-inner">
+                        <div class="book-card-front">
+                            <img src="images/we-are-dreams.jpg" alt="We Are Dreams in the Eternal Machine book cover" class="book-cover">
+                            <div class="book-award">NEW RELEASE</div>
+                        </div>
+                        <div class="book-card-back">
+                            <h3>We Are Dreams in the Eternal Machine</h3>
+                            <p>A haunting novel exploring artificial intelligence and the meaning of human existence in a post-coup America.</p>
+                            <div class="book-accolade">A Literary Hub Notable Book of the Year</div>
+                            <div class="book-accolade">A Millions Most Anticipated Book of 2025</div>
+                            <div class="book-accolade">Featured in Reactor's New Science Fiction Books</div>
+                            <div class="book-accolade">Featured in Book Riot's New Science Fiction and Fantasy Books</div>
+                            <span class="book-category">Speculative Fiction</span>
+                            <a href="https://www.amazon.com/We-Are-Dreams-Eternal-Machine/dp/1571311483?crid=3MW1QGYKM5AC7&dib=eyJ2IjoiMSJ9.rhbM_VdRi76gzsCyC-qALdw6lHddGKGuCSbB5maoElQ.uyv8UyuYRCz4ARrZUYs7lbMxvvt0obQCAWzpvK2HWxA&dib_tag=se&keywords=we+are+dreams+in+the+eternal+machine+a+novel&qid=1746234471&sprefix=we+are+dreams+in+the,aps,98&sr=8-1&linkCode=sl1&tag=netvyo-20&linkId=8dfeab349bf4aeee2f70c30b5126a947&language=en_US&ref_=as_li_ss_tl" class="btn btn-small" target="_blank">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="fiction">
+                    <div class="book-card-inner">
+                        <div class="book-card-front">
+                            <img src="images/into-the-sun.jpg" alt="Into the Sun book cover" class="book-cover">
+                            <div class="book-award">Midwest Book Award</div>
+                        </div>
+                        <div class="book-card-back">
+                            <h3>Into the Sun</h3>
+                            <p>A novel about the civilian surge in Afghanistan, the lives of expats living in Kabul during the war, and their messianic quests. Chosen by Radio Canada/CBC as one of the most important books of 2017.</p>
+                            <span class="book-category">Literary Fiction</span>
+                            <a href="https://www.amazon.com/Into-Sun-Deni-Ellis-Bechard/dp/1571311149?crid=EPH6KOZT9ODK&dib=eyJ2IjoiMSJ9.UZMBjL1v1BCq5foqmAvZqg.wC0ju6SGeG2d7Z_xPOE39-KybDGFsQOvdJ5Yx3FIpik&dib_tag=se&keywords=into+the+sun+bechard&qid=1746241825&s=books&sprefix=into+the+sun+bechard,stripbooks,67&sr=1-1&linkCode=sl1&tag=netvyo-20&linkId=b258c95cc3b26d4a32ff5f88c2872a4b&language=en_US&ref_=as_li_ss_tl" class="btn btn-small" target="_blank">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="memoir">
+                    <div class="book-card-inner">
+                        <div class="book-card-front">
+                            <img src="images/cures-for-hunger.jpg" alt="Cures for Hunger book cover" class="book-cover">
+                            <div class="book-award">Oprah's Summer Reading List</div>
+                        </div>
+                        <div class="book-card-back">
+                            <h3>Cures for Hunger</h3>
+                            <p>A memoir about Béchard's experience growing up with bank robber father and his search to understand his family's origins.</p>
+                            <span class="book-category">Memoir</span>
+                            <a href="https://www.amazon.com/Cures-Hunger-Deni-Ellis-Bechard/dp/1571313427?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.z9lvNB7CIVPIjvC8t4MXDanJPbTyd8uS1QqzXFMR-cr3dqzWHr2fpcsH2hgYRQOhg2cpPbLgM-0W31M_lj-FXHZb-4dDAQJFBzkb6ux4OQYY1pCXFzWSlo0ft-7_d27TEPK4HyibHovcEz-tpSDFguj15-YSSBUk7k3wFWHNcN3AU7pbJ30g_Nr0apvPaydoe-1SUc-XG8h2upwQL1O1_yETkTxasvJgx1F0Uy8qbMc.stnVRaso3LvNNrBnaZosEowTDwniVnih37_PFJGjVkI&qid=1746241746&sr=1-1&linkCode=sl1&tag=netvyo-20&linkId=ad71a4243fc92b81e43a536ed763d5bf&language=en_US&ref_=as_li_ss_tl" class="btn btn-small" target="_blank">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="nonfiction">
+                    <div class="book-card-inner">
+                        <div class="book-card-front">
+                            <img src="images/of-bonobos.jpg" alt="Of Bonobos and Men book cover" class="book-cover">
+                            <div class="book-award">Nautilus Book Award</div>
+                        </div>
+                        <div class="book-card-back">
+                            <h3>Of Bonobos and Men</h3>
+                            <p>A mix of travelogue, journalism, and science writing, this book describes Béchard's journey into the Congo to understand bonobos, the great ape that shares 99 percent of human DNA and that resolves conflicts through sex. Their approach to building peaceful coalitions and sharing resources has much to teach us, particularly at a time when our violent ways have pushed them to the brink of extinction.</p>
+                            <span class="book-category">Investigative Journalism</span>
+                            <a href="https://www.amazon.com/Bonobos-Men-Journey-Heart-Congo/dp/1571313451?crid=1D91L2RE16KBN&dib=eyJ2IjoiMSJ9.fD_xmZIQ8ZGK3at7BaBJX8DJz9pstW0Z7LUI_lhyDB9Pn9wJsRTRZ1xTikEgFiS-eVqMHWVXhXjJTylvBWjlZUsjgeqYdls_64d9Evfjy42L9tZIvPd-adwQGEUIy0jyvnDjAQIQoBIPtiha6EMCxNHPzHZm0xjZ9COwdFuHdkl26oYuOgc--PKoDVyR6prTfVd4S-CRTbZvYRrfjJDxvZKsGx0WfBSO06tk3JXHUPE.eBMmXfOHcA4dzuvNBDF6F2vSHGpqF4Po2Y6JMS2Jv4o&dib_tag=se&keywords=of+bonobos+and+men&qid=1746241794&s=books&sprefix=of+bonobos+and+men,stripbooks,70&sr=1-1&linkCode=sl1&tag=netvyo-20&linkId=b1ea92cd103b3fd7f1410d76ecf6a898&language=en_US&ref_=as_li_ss_tl" class="btn btn-small" target="_blank">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="nonfiction">
+                    <div class="book-card-inner">
+                        <div class="book-card-front">
+                            <img src="images/my-favorite-crime.jpg" alt="My Favorite Crime book cover" class="book-cover">
+                        </div>
+                        <div class="book-card-back">
+                            <h3>My Favorite Crime</h3>
+                            <p>The essays and journalism from around the world consist of years of international reporting and personal reflection on war, family, and place.</p>
+                            <span class="book-category">Essays & Journalism</span>
+                            <a href="https://www.amazon.com/My-Favourite-Crime-Essays-Journalism/dp/1772012327?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.kQZye3AzLwj7m3GfZax4jw.sq1QkumY31uZUOfsr9FyIHBj_XkXRUGOk0gUqYOhO1o&qid=1746241951&sr=1-1&linkCode=sl1&tag=netvyo-20&linkId=1dceda43776f9aa67cb1b901cfacc451&language=en_US&ref_=as_li_ss_tl" class="btn btn-small" target="_blank">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="fiction">
+                    <div class="book-card-inner">
+                        <div class="book-card-front">
+                            <img src="images/song-from-faraway.jpg" alt="A Song from Faraway book cover" class="book-cover">
+                        </div>
+                        <div class="book-card-back">
+                            <h3>A Song from Faraway</h3>
+                            <p>A novel of linked stories about art and personal expression that follow a family across two centuries of war and reinvention.</p>
+                            <span class="book-category">Literary Fiction</span>
+                            <a href="https://www.amazon.com/Song-Faraway-Deni-Ellis-B%C3%A9chard/dp/1571311351?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.UhMPWL7fZddaHov9k4rHlQ.RFtshfciXz8M6HayZR2hl6sCzsVhMaz7hvfU4Mpqrlo&qid=1746241983&sr=1-1&linkCode=sl1&tag=netvyo-20&linkId=4bae56506d7150c8c31f1e0682dedeea&language=en_US&ref_=as_li_ss_tl" class="btn btn-small" target="_blank">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="fiction">
+                    <div class="book-card-inner">
+                        <div class="book-card-front">
+                            <img src="images/vandal-love.jpg" alt="Vandal Love book cover" class="book-cover">
+                            <div class="book-award">Commonwealth Writers' Prize</div>
+                        </div>
+                        <div class="book-card-back">
+                            <h3>Vandal Love</h3>
+                            <p>The magical story of a family during the French-Canadian exodus: A curse—a genetic trick from centuries of hardship—causes the Hervé children to be born giants or runts. While the giants fight in search of a new home in the United States, the runts discover that their power lies in a kind of unifying love. But none of the Hervés can abandon their longing for a place where they might find others like themselves.</p>
+                            <span class="book-category">Literary Fiction</span>
+                            <a href="https://www.amazon.com/Vandal-Love-Deni-Ellis-Bechard/dp/1571310916?crid=2ZDSEBP3FQNBC&dib=eyJ2IjoiMSJ9.c64s5kyd2bR41MTBHBv1m5jG3ME3pjIEgHuBnM7CoGzGjHj071QN20LucGBJIEps.Zjek524RS2jpZI6VD7lmeJheEsT3jXd8ZanvfIKuDrk&dib_tag=se&keywords=vandal+love+bechard&qid=1746234621&sprefix=vandal+love+bechard,aps,64&sr=8-1&linkCode=sl1&tag=netvyo-20&linkId=376f5f780a1aff8ecb48697d188f6e27&language=en_US&ref_=as_li_ss_tl" class="btn btn-small" target="_blank">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="nonfiction">
+                    <div class="book-card-inner">
+                        <div class="book-card-front">
+                            <img src="images/kuei-my-friend.jpg" alt="Kuei, My Friend book cover" class="book-cover">
+                        </div>
+                        <div class="book-card-back">
+                            <h3>Kuei, My Friend</h3>
+                            <p>A book of letters written between Béchard and First Nations poet Natasha Kanapé-Fontaine about growing up on either side of the racial divide and the important work of understanding racism to foster reconciliation.</p>
+                            <span class="book-category">Epistolary Nonfiction</span>
+                            <a href="https://www.amazon.com/Kuei-My-Friend-Conversation-Reconciliation/dp/1772011959?crid=3VRZM27MW9SNP&dib=eyJ2IjoiMSJ9.L_6Gy3VtDWGMcrcDomz2BA.0oGI2aPlvRMIkLw5gNkFwan1fxobVQRxJ_ZlFKoS7iI&dib_tag=se&keywords=kuei+my+friend&qid=1746241851&s=books&sprefix=kuei+my+friend,stripbooks,63&sr=1-1&linkCode=sl1&tag=netvyo-20&linkId=f861fc486749b1e281c18a4c967a61fd&language=en_US&ref_=as_li_ss_tl" class="btn btn-small" target="_blank">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="fiction">
+                    <div class="book-card-inner">
+                        <div class="book-card-front">
+                            <img src="images/white.jpg" alt="White book cover" class="book-cover">
+                            <div class="book-award">Foreword Indie Award</div>
+                        </div>
+                        <div class="book-card-back">
+                            <h3>White</h3>
+                            <p>A novel with echoes of <em>Heart of Darkness</em> about a journalist's journey to find and expose an American criminal hiding in the Congo rainforest.</p>
+                            <div class="book-accolade">Foreword Indie Book of the Year Awards: Bronze Winner for General Fiction</div>
+                            <span class="book-category">Literary Fiction</span>
+                            <a href="https://www.amazon.com/White-Novel-Deni-Ellis-B%C3%A9chard/dp/1571311254?crid=3MKW54246YH9X&dib=eyJ2IjoiMSJ9.ga8p81mK4Oevj_ipDs9JF_LXu4LewL3bpSB5AdmhvdkYLtlCnWaUoKPfkDuX6MwNq_QNJSBOfYK-ertJ7Yco46m6BvNuBKFZm0yzJiMU2eRjZ-BC1H5NuJD4eZA2nV63.r87VeOhkqRlyd7EaaQ2pc4bNKpkm-hAp8AGTUvBaT70&dib_tag=se&keywords=white+bechard&qid=1746241873&s=books&sprefix=white+bechard,stripbooks,83&sr=1-1&linkCode=sl1&tag=netvyo-20&linkId=3cfed5ee464b1512ccfcd70bc43441d5&language=en_US&ref_=as_li_ss_tl" class="btn btn-small" target="_blank">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles" id="articles">
+        <div class="container">
+            <h2 class="section-title center">Articles</h2>
+
+            <!-- Scientific American Articles -->
+            <div class="article-row-wrapper">
+                <button class="article-scroll-btn article-scroll-left" aria-label="Scroll left">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="article-row">
+                    <a href="https://www.scientificamerican.com/article/can-a-chatbot-be-conscious-inside-anthropics-interpretability-research-on/" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">Scientific American</div>
+                        <h3 class="article-title">Can a Chatbot be Conscious? Inside Anthropic's Interpretability Research on Claude 4</h3>
+                        <p class="article-excerpt">Anthropic's research efforts to decode AI systems' internal mechanisms.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                    <a href="https://www.scientificamerican.com/article/why-the-waymo-car-fires-in-recent-los-angeles-protests-caused-the-robotaxis/" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">Scientific American</div>
+                        <h3 class="article-title">Thermal Runaway Explains Why Waymo Cars Burned So Completely</h3>
+                        <p class="article-excerpt">Analysis of the science behind the robotaxi fires during the Los Angeles protests.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                    <a href="https://www.scientificamerican.com/article/scientists-map-nightlife-and-communication-of-nyc-rats-to-help-urban/" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">Scientific American</div>
+                        <h3 class="article-title">New York City's Rats Have a Secret Nightlife—And a Language Humans Can't Hear</h3>
+                        <p class="article-excerpt">Researchers expand our knowledge of rat behavior and communication.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                    <a href="https://www.scientificamerican.com/article/vertical-solar-panels-wind-resistant-trackers-for-high-latitudes-vaja/" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">Scientific American</div>
+                        <h3 class="article-title">Vertical Solar Panels—Wind-Resistant Trackers for High Latitudes</h3>
+                        <p class="article-excerpt">Swedish inventors developed a revolutionary aerodynamic solar tracking system.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                </div>
+                <button class="article-scroll-btn article-scroll-right" aria-label="Scroll right">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Stanford Magazine Articles -->
+            <div class="article-row-wrapper">
+                <button class="article-scroll-btn article-scroll-left" aria-label="Scroll left">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="article-row">
+                    <a href="https://stanfordmag.org/contents/young-blood-and-the-search-for-biological-immortality" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">Stanford Magazine</div>
+                        <h3 class="article-title">Young Blood and the Search for Biological Immortality</h3>
+                        <p class="article-excerpt">How scientists are devising remedies for the ills of human aging.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                    <a href="https://stanfordmag.org/contents/body-count" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">Stanford Magazine</div>
+                        <h3 class="article-title">Body Count</h3>
+                        <p class="article-excerpt">How geneticist Michael Snyder's self-monitoring project could transform human health.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                    <a href="https://stanfordmag.org/contents/when-you-don-t-know-you-feel-alone-in-the-world" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">Stanford Magazine</div>
+                        <h3 class="article-title">"When You Don't Know, You Feel Alone in the World"</h3>
+                        <p class="article-excerpt">The odyssey of the undiagnosed and efforts to identify rare unknown diseases.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                    <a href="https://stanfordmag.org/contents/word-nerd" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">Stanford Magazine</div>
+                        <h3 class="article-title">Word Nerd</h3>
+                        <p class="article-excerpt">Profile of linguist and cultural critic John McWhorter. 2021 Gold CASE Award winner.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                </div>
+                <button class="article-scroll-btn article-scroll-right" aria-label="Scroll right">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Other Articles -->
+            <div class="article-row-wrapper">
+                <button class="article-scroll-btn article-scroll-left" aria-label="Scroll left">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="article-row">
+                    <a href="https://thewalrus.ca/mon-ami-vice/" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">The Walrus</div>
+                        <h3 class="article-title">Mon Ami, Vice</h3>
+                        <p class="article-excerpt">Essay about the lasting impact of having a criminal father. Nominated for a Canadian National Magazine Award and included in <em>Best Canadian Essays</em>.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                    <a href="https://bulletin.hds.harvard.edu/disobedient-ancestors/" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">Harvard Divinity Bulletin</div>
+                        <h3 class="article-title">Disobedient Ancestors</h3>
+                        <p class="article-excerpt">Essay about family, criminality, and the history of the Catholic church in Québec.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                    <a href="https://psmag.com/magazine/the-radical-street-art-of-havanas-youth" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">Pacific Standard</div>
+                        <h3 class="article-title">The Radical Street Art of Havana's Youth</h3>
+                        <p class="article-excerpt">Feature about the work and lives of dissident Cuban street artists.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                    <a href="https://thewalrus.ca/on-le-road/" class="article-card" target="_blank" rel="noopener">
+                        <div class="article-source">The Walrus</div>
+                        <h3 class="article-title">On le Road</h3>
+                        <p class="article-excerpt">Jack Kerouac's unpublished French-language novel reveals the profound influence of his French-Canadian heritage on his literary style.</p>
+                        <span class="article-read-more">Read Article</span>
+                    </a>
+                </div>
+                <button class="article-scroll-btn article-scroll-right" aria-label="Scroll right">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Praise Section -->
+    <section class="praise" id="praise">
+        <div class="container">
+            <h2 class="section-title center">Critical Acclaim</h2>
+
+            <div class="testimonials-carousel" id="carousel">
+                <div class="testimonials-track" id="track">
+                    <div class="testimonial">
+                        <blockquote>
+                            "<em>Into the Sun</em> is a ferociously intelligent and intensely gripping portrait of the expatriate community in Kabul—the idealists, mercenaries, aid workers and journalists circling around a war offering them promises of purpose, redemption, or cash… Brilliant."
+                        </blockquote>
+                        <cite>
+                            <strong>Phil Klay</strong>
+                            <span>National Book Award-winning author of <em>Redeployment</em></span>
+                        </cite>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            "<em>Into the Sun</em> is the sort of book I'm always hungry for—the serious novel in which the guns literally go off. Béchard makes me think of Graham Greene and Robert Stone, which is heady company, indeed."
+                        </blockquote>
+                        <cite>
+                            <strong>Richard Ford</strong>
+                            <span>Pulitzer Prize-winning author of <em>Independence Day</em></span>
+                        </cite>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            "<em>Into the Sun</em> is a story of haunting beauty rendered from the haunting legacy of the Afghan War. In scope and skill, Béchard's portrait is reminiscent of the best works of Graham Greene and Philip Caputo."
+                        </blockquote>
+                        <cite>
+                            <strong>Elliot Ackerman</strong>
+                            <span>Author of <em>Green on Blue</em></span>
+                        </cite>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            "An ambitious novel that succeeds on all levels. It's a riveting mystery-thriller that also probes deeper into the nature of war. <em>Into the Sun</em> has the propulsive force of a car bomb in the bloodstream."
+                        </blockquote>
+                        <cite>
+                            <strong>David Abrams</strong>
+                            <span>Author of <em>Fobbit</em></span>
+                        </cite>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            "<em>We Are Dreams in the Eternal Machine</em> confronts the infinite—and often incomprehensible—aspects of human life."
+                        </blockquote>
+                        <cite>
+                            <strong>Necessary Fiction</strong>
+                        </cite>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            "<em>We Are Dreams in the Eternal Machine</em> demonstrates Béchard's skill for thoughtful, purposeful prose in full force."
+                        </blockquote>
+                        <cite>
+                            <strong>The British Columbia Review</strong>
+                        </cite>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            "North American mythology is rife with shaky stories of theft and imperial expansionism recast as exemplary heroism. And then there's <em>A Song From Faraway</em>… a stunning novel-in-stories that wrestles with the legacy of our continent's fictions."
+                        </blockquote>
+                        <cite>
+                            <strong>Anita Felicelli</strong>
+                            <span>San Francisco Chronicle</span>
+                        </cite>
+                    </div>
+
+                    <div class="testimonial">
+                        <blockquote>
+                            "<em>A Song from Faraway</em> invites readers to participate in storytelling, to move through uncertainty toward clarity. When we hover between selves, when we lead double lives, when we ask impossible questions, 'We blend with others. We glimpse what else we might become.'"
+                        </blockquote>
+                        <cite>
+                            <strong>Marcie McCauley</strong>
+                            <span>World Literature Today</span>
+                        </cite>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="prevBtn" aria-label="Previous testimonial">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="carousel-dots" id="dots"></div>
+                    <button class="carousel-btn next" id="nextBtn" aria-label="Next testimonial">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Get in Touch</h2>
+                <div id="formSuccess" class="form-success" style="display: none;">
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for reaching out. I'll get back to you soon.</p>
+                </div>
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/mwvvrawk" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="_replyto" required placeholder=" ">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select Subject</option>
+                            <option value="speaking">Speaking Engagement</option>
+                            <option value="interview">Interview Request</option>
+                            <option value="rights">Rights & Permissions</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <input type="hidden" name="_subject" value="New contact form submission">
+                    <button type="submit" class="btn btn-primary btn-large">
+                        Send Message
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Deni Ellis Béchard</span>
+                    <p>Author & Journalist</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#books">Books</a>
+                    <a href="#articles">Articles</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://x.com/denibechard" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/denibechard/?hl=en" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Deni Ellis Béchard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
