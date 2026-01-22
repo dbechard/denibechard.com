@@ -1587,12 +1587,12 @@ section {
     }
 
     .hero-subtitle {
-        font-size: 0.65rem;
+        font-size: 0.85rem;
         letter-spacing: 0.15em;
     }
 
     .hero-title {
-        font-size: clamp(1.75rem, 12vw, 2.5rem);
+        font-size: clamp(2.5rem, 16vw, 3.5rem);
         word-wrap: break-word;
         overflow-wrap: break-word;
     }
